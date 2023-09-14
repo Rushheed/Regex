@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Quotation style
+        let story ="tiidelab isn't just a fellowship but a 'family.' with ambition"
+        //Define a regular expression pattern to identify dialogue quotes
+        let pattern =/(^|\W)'|'(\W]$)/ig 
+        let output = story.replace(pattern, '$1"')
+        console.log(output)
+    </script>
+</body>
+</html>
